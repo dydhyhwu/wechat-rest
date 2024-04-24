@@ -22,6 +22,8 @@ func HandleWebhook(header http.Header, msg string) (string, error) {
 		return handlers.IssueCommentEventHandler(msg)
 	case "issues":
 		return handlers.IssuesEventHandler(msg)
+	default:
+		return "", nil
 	}
 
 	return fmt.Sprintf(templates.TemplateUnsupport, name), nil

@@ -4,6 +4,7 @@ import (
 	"github.com/opentdp/wrest-chat/wclient/whapp/gitea"
 	"github.com/opentdp/wrest-chat/wclient/whapp/github"
 	"github.com/opentdp/wrest-chat/wclient/whapp/text"
+	log "github.com/sirupsen/logrus"
 	"net/http"
 )
 
@@ -20,7 +21,7 @@ func Handler(header http.Header, app string, msg string) string {
 	case "text":
 		res, err = text.HandleWebhook(msg)
 	default:
-		res = "暂不支持该应用的 webhook"
+		log.Warnf("unsupport app: %s", app)
 	}
 
 	if err != nil {

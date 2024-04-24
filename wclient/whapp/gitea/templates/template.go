@@ -40,6 +40,10 @@ var (
 👤 {{ .Sender.FullName }}（{{ .Sender.Email }}）
 🏷️ {{ range $index, $val := .Issue.Labels }}{{ $val.Name }} {{ end }} 
 `)
+	TemplateCloseIssue = NewTemplate("CLOSE_ISSUE", `🎉 ️ {{ .Repository.Name }}#{{ .Issue.Number }} 已完成
+📝 {{ .Issue.Title }}
+👤 {{ .Sender.FullName }}（{{ .Sender.Email }}）
+`)
 
 	TemplateCreateIssueComment = NewTemplate("CREATE_ISSUE_COMMENT", `🗨️ {{ .Repository.Name }}#{{ .Issue.Number }} 有新评论
 📦 {{ .Repository.FullName }}#{{ .Issue.Number }}

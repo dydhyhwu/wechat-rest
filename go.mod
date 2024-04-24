@@ -7,10 +7,12 @@ require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/gorilla/websocket v1.5.1
 	github.com/importcjj/sensitive v0.0.0-20200106142752-42d1c505be7b
+	github.com/json-iterator/go v1.1.12
 	github.com/mitchellh/mapstructure v1.5.0
 	github.com/opentdp/go-helper v0.7.2
 	github.com/rehiy/one-llm v0.3.1-0.20240417125530-aa8fc354d906
 	github.com/robfig/cron/v3 v3.0.1
+	github.com/sirupsen/logrus v1.9.0
 	go.nanomsg.org/mangos/v3 v3.4.2
 	google.golang.org/protobuf v1.33.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -39,7 +41,6 @@ require (
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/jinzhu/now v1.1.5 // indirect
-	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/klauspost/cpuid/v2 v2.2.7 // indirect
 	github.com/kr/text v0.2.0 // indirect
 	github.com/leodido/go-urn v1.4.0 // indirect
